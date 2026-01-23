@@ -15,10 +15,10 @@ services:
   authentication-service:
     build:
       context: ./../authentication-service
-      dockerfile: ./../authentication-service/authenticacion-service.dockerfile
+      dockerfile: ./../authentication-service/authentication-service.dockerfile
     restart: always
     ports:
-      - "8082:80"
+      - "8082:82"
     deploy:
       mode: replicated
       replicas: 1
